@@ -1,4 +1,5 @@
 import React from 'react';
+import Team from './Ip';
 function Iplteam(){
 var [teams,setTeams]=React.useState([
 {
@@ -34,11 +35,12 @@ players:[
 ])
 return(
 <div className='tarun'>
-<h1>Ipl Teams:</h1>
+<h1 >Ipl Teams:</h1>
 <ul>
 {
 teams.map((team)=>{
-return <li className='tarun'><h3>{team.teamname}</h3></li>
+    return (<Team players={team.players} teamname={team.teamname} ></Team>)
+
 })
 }
 </ul>

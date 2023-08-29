@@ -1,8 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
 import Counter from './Counter';
 import Todolist from './Todolist';
 import Iplteam from './Iplteam';
+import Todolist1 from './Todolist-1';
 function App() {
   return (
     <div className="tarun">
@@ -11,6 +10,7 @@ function App() {
     <Counter start={5} i={5}></Counter>
     <Todolist></Todolist>
     <Iplteam></Iplteam>
+    <Todolist1></Todolist1>
     </div>
   );
 }
