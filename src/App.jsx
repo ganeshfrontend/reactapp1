@@ -1,13 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Counter from './Counter'
-import Todolist from './Todolist';
+import Restcountries from "./Restcountries";
 function App() {
   return (
     <div className="mybox">
       <h1>welcome to ganesh world</h1>
-    <Counter></Counter>
-    <Todolist></Todolist>
+      <Restcountries></Restcountries>
     </div>
   );
 }
