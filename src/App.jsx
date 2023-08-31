@@ -1,9 +1,8 @@
-import Restcountries from "./Restcountries";
+import Vacationplanner from "./Vacationplanner";
 function App() {
   return (
     <div className="mybox">
-      <h1>welcome to ganesh world</h1>
-      <Restcountries></Restcountries>
+      <Vacationplanner></Vacationplanner>
     </div>
   );
 }
