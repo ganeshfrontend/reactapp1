@@ -1,27 +1,21 @@
 import React from "react";
-import Prop from "./Props";
-
-function Counter(){
-var [i,setI]=React.useState(1)
+function Counter(props){
+var [count,setCount]=React.useState(props.s)
 function inc(){
-setI(i+1)
+    setCount(count+props.i)
 }
 function dec(){
-setI(i-1)
-   }
-   
+    setCount(count-props.i)
+}
+
 return(
 <div className="mybox">
-<h1>Counter:{i}</h1>
-<button onClick={()=>{inc()}} >Increment</button>
+
+<h1>Counter:{count}</h1>
+<button onClick={()=>{inc()}}>Increment</button>
 <button onClick={()=>{dec()}}>Decrement</button>
 
-<Prop title="Frontend" courses={["Reactjs","Angular","Html","Css"]} >  </Prop>
-<Prop title="Backend" courses={["Nodejs","Java"]}>  </Prop>
-<Prop title="AndroidDeveloper" courses={["Javascript","Java"]}>  </Prop>
-<Prop title="Ios Developer" courses={["swift","Java"]}>  </Prop>
 </div>
-
 )
 }
 export default Counter;
