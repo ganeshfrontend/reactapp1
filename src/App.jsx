@@ -1,11 +1,11 @@
-import Restcountries from "./Restcountries";
+import Counter from "./Counter";
 function App() {
-  return (
-    <div className="mybox">
-      <h1>welcome to ganesh world</h1>
-      <Restcountries></Restcountries>
-    </div>
-  );
+  return(
+<div>
+    <Counter> </Counter>
+  
+</div>
+  )
 }
 
 export default App;
