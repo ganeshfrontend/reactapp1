@@ -1,5 +1,6 @@
 import React from "react";
 function Child(props){
+console.log("Im Child")
 return(
 <div>
 <ul className="mybox">
