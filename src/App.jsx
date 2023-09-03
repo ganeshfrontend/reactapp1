@@ -1,10 +1,9 @@
-import Counter from "./Counter";
+import Refactoring from "./Refactoring";
 function App() {
   return(
 <div className="mybox">
-    <Counter s={10} i={5}> </Counter>
-    <Counter s={20} i={10}> </Counter>
-  
+  <h1 align="center">Refactoring</h1>
+  <Refactoring></Refactoring>
 </div>
   )
 }
