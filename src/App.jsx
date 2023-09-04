@@ -1,9 +1,9 @@
-import Restcountries from "./Restcountries";
+import Accordian from "./Accordian";
 function App() {
   return (
     <div className="mybox">
-      <h1>welcome to ganesh world</h1>
-      <Restcountries></Restcountries>
+      <h1>Questions And Answers About Login</h1>
+      <Accordian></Accordian>
     </div>
   );
 }
