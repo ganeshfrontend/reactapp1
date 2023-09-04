@@ -1,9 +1,8 @@
-import Accordian from "./Accordian";
+import Form from "./Form"
 function App() {
   return (
     <div className="mybox">
-      <h1>Questions And Answers About Login</h1>
-      <Accordian></Accordian>
+      <Form></Form>
     </div>
   );
 }
