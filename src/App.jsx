@@ -1,8 +1,8 @@
-import Quiz from "./QuizApp";
+import Likes from "./Likes";
 function App() {
   return (
     <div className="mybox">
-      <Quiz></Quiz>
+      <Likes></Likes>
     </div>
   );
 }
