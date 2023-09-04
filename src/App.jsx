@@ -1,7 +1,7 @@
 import Vacationplanner from "./Vacationplanner";
 function App() {
   return (
-    <div className="mybox">
+    <div>
       <Vacationplanner></Vacationplanner>
     </div>
   );

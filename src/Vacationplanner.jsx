@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
 function Vacationplanner(){
 var [vacation,setVacation]=React.useState([])
 React.useEffect(
@@ -10,18 +11,25 @@ setVacation([...response.data])
  
 })},[])
 return(
-<div>
+<div className="card mybox" style={{width:"18rem;"}}>
  {
  vacation.map(function(v){
- return <li className="mybox li">
-<img src={v.image}  className="img"/><br />
-    Name:{v.name}
- <p>Information:{v.info}</p>
- <span>Price:{v.price}</span>
- </li>
- })
+return <li className="m-2">
+    <img src={v.image}  className="card-img-top"/><br />
+<div className="card-body">
+<h5 className="card-title">{v.name} 
+<h6 className="badge bg-primary">${v.price}</h6>
+</h5>
+<p className="card-text">{v.info}</p>
+<div className="d-grid gap-2 col-4 mx-auto">
+<button className="btn btn-outline-danger">Not Interested</button>
+</div>
+</div>
+</li>
+})
 }
 </div>
+
 )
 }
 export default Vacationplanner;

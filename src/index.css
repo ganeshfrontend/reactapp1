@@ -1,16 +1,6 @@
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
 .mybox{
-  border:1px solid;
   padding:10px;
-  margin:10px;
+  margin:300px;
   list-style:none;
-}
-.mybox1{
-  width:300px
-}
-.img {
-  width:200px
-  
-}
-.li{
-  width:300px
 }
