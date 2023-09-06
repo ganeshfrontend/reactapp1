@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import Courses from './Courses';
 import Aboutus from './Aboutus';
-import Country from './Countries';
+import Country from './countries';
 import Details from './Details'
 import reportWebVitals from './reportWebVitals';
 import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
-import Router from './Countries';
+import Router from './countries';
 const router = createBrowserRouter([
     {
       path: "/",
@@ -26,11 +26,11 @@ const router = createBrowserRouter([
             element:<Aboutus></Aboutus>,
           },
           {
-            path: "/Countries",
+            path: "/countries",
             element:<Country></Country>,
             children:[
                 {
-                path: "/Countries/details/:cname",
+                path: "/countries/details/:cname",
                 element:<Details></Details>,
             }
             ]

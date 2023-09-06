@@ -17,11 +17,11 @@ return(
 details &&(
 <div className="card " style={{width: "18rem;"}}>
 <img src={details.flags.png} className="card-img-top"/>
-<div className="card-body text-center">
+<div className="card-body text-center bg-warning">
 <h1 className="card-title">{details.name.common}</h1>
-<h6 className="badge bg-success">{details.capital}</h6>
-<h6 className="badge bg-primary">{details.population}</h6>
-<h6 className="badge bg-info text-end">{details.region}</h6>
+<span className="badge bg-success">{details.capital}</span>
+<span className="badge bg-primary">{details.population}</span>
+<span className="badge bg-info text-end">{details.region}</span>
 </div>
 </div>
 )

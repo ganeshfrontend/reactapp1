@@ -4,10 +4,10 @@ function App() {
     <div className="mybox">
       <h1>hi ganesh</h1>
       <Link  to="/Courses" >Courses</Link>&nbsp;&nbsp;
-      <Link  to="/Aboutus" >Aboutus</Link>&nbsp;&nbsp;
-      <Link  to="/countries" >countries</Link>
+     <Link  to="/Aboutus" >Aboutus</Link>&nbsp;&nbsp;
+      <Link  to="/Countries" >countries</Link>
       <Outlet></Outlet>
-    </div>
+      </div>
   );
 }
 

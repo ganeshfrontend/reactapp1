@@ -10,7 +10,7 @@ setCountries(response.data)
 })
 },[])
 return(
-<div className="display">
+<div className="d-flex">
   <div>
   <ul  className=" mybox">
   {
