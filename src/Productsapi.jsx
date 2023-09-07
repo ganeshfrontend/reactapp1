@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import "bootstrap/dist/css/bootstrap.min.css";
+import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 function Products(){
 const [products,setProducts]=React.useState([])
 useEffect(function(){
@@ -14,14 +14,11 @@ const [cart,SetCart]=React.useState([])
 SetCart([...cart])
 }
 return(
-     <div>
-
-      {
-      <ul className="d-flex flex-wrap">
+ <div>
+      <div>
       {
        products.length >0 && products.map(function(p){
-       return <div className="mybox"> 
-       <div className="card " style={{width:"18rem"}}>
+       return <div className="card " style={{width:"18rem"}}>
         <img src={p.image} className="card-img-top" />
         <div className="card-body">
           <h5>{p.title}</h5>
@@ -29,20 +26,18 @@ return(
           <button onClick={addcart}>Addto Cart</button>
         </div>
       </div>
-      </div>
        })
       }
-      </ul>
-        
-      }
-      <div>
-        {
-          cart.length>0 && cart.map(function(c){
-            return <li>{c.title}</li>
-          })
-        }
       </div>
+     {/* <div>
+    {
+      cart.length>0 && cart.map(function(c){
+        return <li>{c.title}</li>
+      })
+    }
       </div> 
+ */}
+</div> 
    
 )
 }
