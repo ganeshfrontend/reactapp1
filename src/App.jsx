@@ -1,9 +1,9 @@
-import Accordian from "./Accordian";
+import Countries from "./Countries";
 function App() {
   return (
     <div className="mybox">
-      <h1>Questions And Answers About Login</h1>
-      <Accordian></Accordian>
+      <h3>Countries</h3>
+      <Countries></Countries>
     </div>
   );
 }
