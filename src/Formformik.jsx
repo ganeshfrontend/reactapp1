@@ -8,13 +8,17 @@ initialValues:{
 firstname:"",
 email:"",
 lastname:"",
-password:""
+password:"",
+age:"",
+dateofbirth:""
 },
 validationSchema: Yup.object({
     firstname: Yup.string().required('Firstname Required'),
     email: Yup.string().email().required('Email Required'),
     lastname: Yup.string().required('lastname Required'),
-    password: Yup.string().required('password Required')
+    password: Yup.string().required('password Required'),
+    age: Yup.string().required('age Required'),
+    dateofbirth: Yup.string().required('dateofbirth Required')
 
   }),
   
@@ -38,6 +42,12 @@ Lastname:
 Password:
 <input type="text" name="password" onChange={myform.handleChange}/>
 <b >{myform.touched.password && myform.errors && myform.errors.password}</b><br />
+Age:
+<input type="number" name="age" onChange={myform.handleChange}/>
+<b >{myform.touched.age && myform.errors && myform.errors.age}</b><br />
+DateofBirth:
+<input type="text" name="dateofbirth" onChange={myform.handleChange}/>
+<b >{myform.touched.dateofbirth && myform.errors && myform.errors.dateofbirth}</b><br />
 
 <button type="submit">Submit</button>
 </form>
