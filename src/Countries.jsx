@@ -35,13 +35,20 @@ setCountries([...countries])
     })
     setCountries([...countries])
      }
+     function abc(){
+        var input1 =document.getElementById("input").value
+       var res= countries.filter(function(a){
+            return a.name.common.toLowerCase().startsWith(input1)
+        })
+        setCountries(res)
+     }
 return(
-    <div className="card w-70">
+    <div>
       <div className="mybox">
       <b>Sort By Population</b>&nbsp;&nbsp;
       <span onClick={asc}>Ascending</span>&nbsp;&nbsp;
       <span onClick={des}>Descending</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input type="text" placeholder="Search"/>
+      <input type="text" placeholder="Search" id="input" onKeyUp={abc}/>
       <i className="bi bi-search"></i>
       </div>  
              <div className="d-flex flex-wrap">
