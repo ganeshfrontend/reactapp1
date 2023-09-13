@@ -1,7 +1,7 @@
+import {store} from "./app/store";
 import {Provider} from "react-redux";
-import store from "./store"
-import Counter from "./Counter"
-import Todolist from "./Todolist";
+import Counter from "./features/counter/Counter"
+import Todolist from "./features/todolist/Todolist";
 function App() {
   return (
     <Provider store={store}>
