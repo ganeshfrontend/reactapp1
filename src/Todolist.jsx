@@ -7,14 +7,26 @@ var [nt,setNt]=useState("")
         <div>
             <h1>Todolist:</h1>
             <input type="text" onChange={(e)=>{setNt(e.target.value)}}/>
-            <button onClick={()=>{props.dispatch({type:"addtodo",payload:nt})}}>Addtodo</button>
-                {props.t.todos.map(function(a,i){
+            <button onClick={()=>{props.addtodoitems(nt)}}>Addtodo</button>
+                {props.todos.map(function(a,i){
                     return <li key={i}>{a}
-                    <button onClick={()=>{props.dispatch({type:"delete",payload:i})}}>Delete</button>
+                    <button onClick={()=>{props.deletetodoitems(i)}}>Delete</button>
                     </li>
                 })}
             
         </div>
     )
 }
-export default connect(function(store){return store})(Todolist);
+function mapStateToProps(state){return state.t}
+
+function mapDispatchToProps(dispatch)
+{
+    return {
+        addtodoitems:(nt)=>{dispatch({type:"addtodo",payload:nt})},
+        deletetodoitems:(i)=>{dispatch({type:"delete",payload:i})}
+    }
+}
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Todolist);
