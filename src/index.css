@@ -1,12 +1,37 @@
-.mybox{
+#mybox{
   border:1px solid;
   padding:10px;
   margin:10px;
   list-style:none;
 }
-.mybox1{
-border:1px solid;
-padding:10px;
-margin:15px;
-width:500px
+#mybox li{
+  border:1px solid;
+  padding:10px;
+  margin:10px;
+  width:150px;
+  list-style:none;
+}
+#class{
+  display: flex;
+  flex-wrap: wrap;
+}
+.li{
+  background-color:deepskyblue;
+}
+.lidelete{
+  background-color:yellow;
+}
+.liedit{
+  background-color: red;
+}
+.input{
+  background-color:aliceblue;
+  padding:5px
+}
+.button{
+  background-color:orange;
+  padding:5px
+}
+.textcolor{
+  color:blue;
 }
