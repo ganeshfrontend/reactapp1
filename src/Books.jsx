@@ -45,9 +45,9 @@ return(
         <input type="text"className="input textcolor "  placeholder="Enter Title"  onChange={(event)=>{setNewbook({...newbook,title:event.target.value})}}/><br />
         <input type="text" className="input textcolor" placeholder="Enter Author"  onChange={(event)=>{setNewbook({...newbook,author:event.target.value})}}/><br />
         offline:
-        <input type="radio" name="book"  value="offline"/>&nbsp;
+        <input type="radio" name="book"  value="offline" onChange={(event)=>{setNewbook({...newbook,offline:event.target.value})}} />&nbsp;
         printedBook:
-        <input type="radio" name="book" value="printedBook"/><br />
+        <input type="radio" name="book" value="printedBook" onChange={(event)=>{setNewbook({...newbook,printedBook:event.target.value})}} /><br />
         <button className="button" onClick={()=>{add()}}>Add Data</button>
        </div>
        )
