@@ -20,8 +20,14 @@
     {
       "title": "ganesh",
       "author": "ganesh",
-      "offline": "offline",
+      "booktype": "offline",
       "id": 1
+    },
+    {
+      "title": "maruthi",
+      "author": "maruthi",
+      "booktype1": "printedBook",
+      "id": 2
     }
   ]
 }

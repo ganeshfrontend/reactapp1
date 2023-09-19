@@ -45,9 +45,9 @@ return(
         <input type="text"className="input textcolor "  placeholder="Enter Title"  onChange={(event)=>{setNewbook({...newbook,title:event.target.value})}}/><br />
         <input type="text" className="input textcolor" placeholder="Enter Author"  onChange={(event)=>{setNewbook({...newbook,author:event.target.value})}}/><br />
         offline:
-        <input type="radio" name="book"  value="offline" onChange={(event)=>{setNewbook({...newbook,offline:event.target.value})}} />&nbsp;
+        <input type="radio" name="book"  value="offline" onChange={(event)=>{setNewbook({...newbook,booktype:event.target.value})}} />&nbsp;
         printedBook:
-        <input type="radio" name="book" value="printedBook" onChange={(event)=>{setNewbook({...newbook,printedBook:event.target.value})}} /><br />
+        <input type="radio" name="book" value="printedBook" onChange={(event)=>{setNewbook({...newbook,booktype1:event.target.value})}} /><br />
         <button className="button" onClick={()=>{add()}}>Add Data</button>
        </div>
        )
@@ -69,6 +69,8 @@ books.length>0&& books.map(function(b,i){
     return <li key={i} className="li">
         <h3>{b.id}.{b.title}</h3>
         <h4>{b.author}</h4>
+        <h4>{b.booktype}</h4>
+        <h4>{b.booktype1}</h4>
         <button onClick={()=>{del(b.id)}} className="lidelete">delete</button>&nbsp;&nbsp;  
         <button onClick={()=>{edit(b)}} className="liedit">Edit</button>
         </li>
